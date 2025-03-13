@@ -5,12 +5,15 @@ The data ingestion uses a mock temperature sensor built atop a Python script.
 # For the iot-data-stream.py
 
 **Generate data from 10 devices every second and print to console**
+
 python iot_data_generator.py
 
 **Generate 100 readings from 5 devices every 2 seconds and save to CSV**
+
 python iot_data_generator.py --devices 5 --frequency 2 --count 100 --output sensor_data.csv --format csv
 
 **Generate continuous data and send to Kinesis (after uncommenting Kinesis code)**
+
 python iot_data_generator.py --kinesis IoTStream
 
 
