@@ -8,7 +8,7 @@ The data ingestion uses a mock temperature sensor built atop a Python script.
 
 python iot_data_generator.py
 
-**Generate 100 readings from 5 devices every 2 seconds and save to CSV**
+**Generate 100 readings from 5 devices every 2 seconds (adjustable, but 2 seconds is a good middle ground) and save to CSV**
 
 python iot_data_generator.py --devices 5 --frequency 2 --count 100 --output sensor_data.csv --format csv
 
